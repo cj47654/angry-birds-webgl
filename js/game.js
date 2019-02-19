@@ -216,6 +216,7 @@ function addBird(img) {
 
 document.onkeydown = function(e) {
   if (e.keyCode == 49 || e.keyCode == 50 || e.keyCode == 51) {//1, 2, 3
+    if (!bird) return;
     if (result._ops.text === '') {
       if (birdDestroy === false) {
         bird.destroy();
